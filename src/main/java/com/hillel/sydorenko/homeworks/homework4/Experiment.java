@@ -11,19 +11,19 @@ public class Experiment {
         System.out.println("Enter count of Warriors in Li army:");
         int countWarriorLi = qwerty.nextInt();
 
-        System.out.println("Enter power of each warrior in Li army:");
+        System.out.println("Enter power of each warrior unit in Li army:");
         int powerWarriorLi = qwerty.nextInt();
 
         System.out.println("Enter count of Rangers in Li army:");
         int countRangerLi = qwerty.nextInt();
 
-        System.out.println("Enter power of each Ranger in Li army:");
+        System.out.println("Enter power of each Ranger unit in Li army:");
         int powerRangerLi = qwerty.nextInt();
 
         System.out.println("Enter count of Cavalries in Li army:");
         int countCavalryrLi = qwerty.nextInt();
 
-        System.out.println("Enter power of each Cavalry in Li army:");
+        System.out.println("Enter power of each Cavalry unit in Li army:");
         int powerCavalryLi = qwerty.nextInt();
 
 
@@ -31,15 +31,15 @@ public class Experiment {
         int tottalLiRangersPower = countRangerLi * powerRangerLi;
         int totalLiCavalryPower = countCavalryrLi * powerCavalryLi;
 
-        System.out.println("Enter power of each warrior in Min army:");
+        System.out.println("Enter power of each warrior unit in Min army:");
         int powerWarriorMin = qwerty.nextInt();
         double countWarriorMin = countWarriorLi * 1.5;
 
-        System.out.println("Enter power of each Ranger in Min army:");
+        System.out.println("Enter power of each Ranger unit in Min army:");
         int powerRangerMin = qwerty.nextInt();
         double countRangerMin = countRangerLi * 1.5;
 
-        System.out.println("Enter power of each Cavalry in Min army:");
+        System.out.println("Enter power of each Cavalry unit in Min army:");
         int powerCavalryMin = qwerty.nextInt();
         double countCavalryrMin = countCavalryrLi * 1.5;
 
