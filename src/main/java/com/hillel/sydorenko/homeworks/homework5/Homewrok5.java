@@ -122,7 +122,7 @@ public class Homewrok5 {
         } else if (team1AvgKills < team2AvgKills){
             System.out.println("Перемогла команда" + " " + team2 + " " + "набрала" + " " + team2AvgKills + " " +  "очків");
         } else {
-            System.out.println("НІчия!");
+            System.out.println("Нічия!");
             System.exit(0);
         }
     }
