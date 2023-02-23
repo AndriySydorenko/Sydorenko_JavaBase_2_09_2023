@@ -18,7 +18,6 @@ public class Homework7 {
 
         while (numberGuesses < maxGuesses) {
             System.out.println("Attempts number " + (numberGuesses + 1) + ":");
-//          scanner.nextLine(); // тут можемо додати очистку буфера якщо в подальшому ще будемо використовувати сканер
 
             if (scanner.hasNextInt()) {
                 userNumber = scanner.nextInt();
