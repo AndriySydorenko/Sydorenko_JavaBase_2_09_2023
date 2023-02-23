@@ -21,7 +21,13 @@ public class Homework7 {
 
             if (scanner.hasNextInt()) {
                 userNumber = scanner.nextInt();
-                numberGuesses++;
+
+                if (userNumber < 0 || userNumber > 10) {
+                    System.out.println("Please enter number between 0 and 10!");
+                    continue;
+                } else {
+                    numberGuesses++;
+                }
 
                 if (userNumber == secretNumber) {
                     System.out.println("Congratulation! You Win!");
