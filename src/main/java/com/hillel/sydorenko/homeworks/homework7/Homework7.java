@@ -17,26 +17,33 @@ public class Homework7 {
         System.out.println("You have only" + " " + maxGuesses + " " + "attempts!");
 
         while (numberGuesses < maxGuesses) {
-            numberGuesses++;
-            System.out.println("Attempts number " + numberGuesses + ":");
-            userNumber = scanner.nextInt();
+            System.out.println("Attempts number " + (numberGuesses + 1) + ":");
 //          scanner.nextLine(); // тут можемо додати очистку буфера якщо в подальшому ще будемо використовувати сканер
 
-            if (userNumber == secretNumber) {
-                System.out.println("Congratulation! You Win!");
-                System.out.println("Your number: " + userNumber);
-                System.out.println("AI number: " + secretNumber);
-                break;
-            } else if (userNumber < secretNumber) {
-                System.out.println("AI chose bigger number.");
+            if (scanner.hasNextInt()) {
+                userNumber = scanner.nextInt();
+                numberGuesses++;
+
+                if (userNumber == secretNumber) {
+                    System.out.println("Congratulation! You Win!");
+                    System.out.println("Your number: " + userNumber);
+                    System.out.println("AI number: " + secretNumber);
+                    break;
+                } else if (userNumber < secretNumber) {
+                    System.out.println("AI chose bigger number.");
+                } else {
+                    System.out.println("AI chose less number.");
+                }
             } else {
-                System.out.println("AI chose less number.");
+                System.out.println("Wrong data. Try again");
+                scanner.next();
             }
             if (numberGuesses == maxGuesses) {
                 System.out.println("Sorry, you a not guess.");
                 System.out.println("AI guess number: " + secretNumber);
             }
         }
+
         scanner.close();
 
 //
