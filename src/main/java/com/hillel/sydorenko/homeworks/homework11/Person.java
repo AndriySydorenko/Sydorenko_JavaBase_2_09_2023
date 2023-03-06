@@ -1,8 +1,8 @@
 package com.hillel.sydorenko.homeworks.homework11;
 
 public class Person {
-    static String personInfo(String name, String surname, String city, String phoneNumber) {
-        return "Зателефонувати громадянинові " + name + " " + surname + " з міста " + city + " можна за номером " + phoneNumber + ".";
+    static String personInfo(String firstName, String lastName, String city, String phoneNumber) {
+        return "Зателефонувати громадянинові " + firstName + " " + lastName + " з міста " + city + " можна за номером " + phoneNumber + ".";
     }
 
     public static void main(String[] args) {
