@@ -11,5 +11,14 @@ public class Main {
         person3.printAccountInfo();
         person4.printAccountInfo();
 
+
+        //можемо змінити змінні параметри з задомогою сетерів
+        System.out.println();
+        person3.setLastName("Test123");
+        person3.setPressure(0);
+        person3.setWeight(1);
+        person3.setCountOfSteps(0);
+        person3.printAccountInfo();
+
     }
 }
