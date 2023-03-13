@@ -83,6 +83,7 @@ public class Person {
         this.countOfSteps = countOfSteps;
         this.age = calculateAge();
     }
+
     private int calculateAge() {
         int currentYear = 2023;
         int age = currentYear - getYearOfBirth();
@@ -94,7 +95,7 @@ public class Person {
     }
 
     void printAccountInfo() {
-        System.out.println(name + " " + lastName + " - " + "age: " + age + " " + "email: " + email + " " + "phone: " + phone + ". " + "Parameters - " + "weight: " + weight + " " + " pressure: " + pressure + " " + "steps: " + countOfSteps);
+        System.out.println(name + " " + lastName + " - " + "age: " + age + " " + "birthday: " + monthOfBirth + "." + dayOfBirth + "." + yearOfBirth + " " + "email: " + email + " " + "phone: " + phone + ". " + "Parameters - " + "weight: " + weight + " " + " pressure: " + pressure + " " + "steps: " + countOfSteps);
     }
 
 }
