@@ -1,4 +1,4 @@
-package com.hillel.sydorenko.homeworks.homework16;
+package com.hillel.sydorenko.homeworks.homework15;
 
 public class Androids implements Smartphones, LinuxOS{
     private final String modelName = "Android";

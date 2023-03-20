@@ -1,4 +1,4 @@
-package com.hillel.sydorenko.homeworks.homework16;
+package com.hillel.sydorenko.homeworks.homework15;
 
 public class IPhones implements Smartphones, IOS{
     private final String modelName = "iOS";
