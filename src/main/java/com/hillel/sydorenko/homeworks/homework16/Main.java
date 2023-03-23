@@ -18,8 +18,10 @@ public class Main {
             boolean isStop = false;
             while (true) {
                 System.out.println("Please insert item from list: " + Arrays.toString(drinksType));
+                System.out.println();
                 System.out.println("Total drinks makes: " + DrinksCount.getTotalDrinksCOunts());
                 System.out.println("Total money spends: " + DrinksCount.getTotalCosts());
+                System.out.println();
                 System.out.println("For stoping program insert STOP ");
                 String userChose = scanner.nextLine();
 
@@ -41,11 +43,14 @@ public class Main {
                 if (userDrinkType != null) {
                     break;
                 } else {
-                    System.out.println("Wrong data, try again");
+                    System.out.println("Please enter item from list!");
+                    System.out.println();
                 }
             }
 
             if (isStop) {
+                System.out.println("Total drinks maked: " + DrinksCount.getTotalDrinksCOunts());
+                System.out.println("Total money spended: " + DrinksCount.getTotalCosts());
                 break;
             }
 

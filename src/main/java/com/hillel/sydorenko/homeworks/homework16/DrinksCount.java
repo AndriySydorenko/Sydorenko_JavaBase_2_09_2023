@@ -46,48 +46,48 @@ public class DrinksCount {
     // Додав в світч кейс і збільшення загальної кількості напоїв і збільшення кожного типу, якщо буде потрібно в майбутньому дізнатись кількість напоїв конкретного типу.
     public static void makeDrink(DrinksMachine drink) {
         switch (drink) {
-            case COFFE:
+            case COFFE: {
 //                makeCoffe();
                 coffeeCount++;
                 totalDrinksCOunts++;
                 totalCosts = totalCosts + Drinks.coffePrice;
                 break;
-
-            case LEMONADE:
+            }
+            case LEMONADE: {
 //                makeLemonade();
                 lemonadeCount++;
                 totalDrinksCOunts++;
                 totalCosts = totalCosts + Drinks.limonadePrice;
                 break;
-
-            case TEA:
+            }
+            case TEA: {
 //                makeTea();
                 teaCount++;
                 totalDrinksCOunts++;
                 totalCosts = totalCosts + Drinks.teaPrice;
                 break;
-
-            case MOJITO:
+            }
+            case MOJITO: {
 //                makeNojito();
                 mojitoCount++;
                 totalDrinksCOunts++;
                 totalCosts = totalCosts + Drinks.mojitoPrice;
                 break;
-
-            case MINERALWATER:
+            }
+            case MINERALWATER: {
 //                makeMineralWater();
                 mineralCount++;
                 totalDrinksCOunts++;
                 totalCosts = totalCosts + Drinks.mineralPrice;
                 break;
-
-            case COCECOLA:
+            }
+            case COCECOLA: {
 //                makeCoceCola();
                 coceCount++;
                 totalDrinksCOunts++;
                 totalCosts = totalCosts + Drinks.cocePrice;
                 break;
-
+            }
         }
     }
 

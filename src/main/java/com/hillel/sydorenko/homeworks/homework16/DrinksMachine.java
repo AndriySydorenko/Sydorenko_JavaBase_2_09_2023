@@ -1,12 +1,12 @@
 package com.hillel.sydorenko.homeworks.homework16;
 
 public enum DrinksMachine {
-    COFFE("Кава"),
-    LEMONADE("Лимонад"),
-    TEA("Чай"),
-    MOJITO("Мохіто"),
-    MINERALWATER("Мінеральна вода"),
-    COCECOLA("Кока кола");
+    COFFE("Coffe"),
+    LEMONADE("Lemonade"),
+    TEA("Tea"),
+    MOJITO("Mojito"),
+    MINERALWATER("Mineral water"),
+    COCECOLA("Coce-cola");
 
     private String drinkType;
 
